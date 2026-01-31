@@ -35,7 +35,7 @@ const Setting = () => {
     } else {
       try {
         const response = await axios.put(
-          "https://ems-backend-hkt0.onrender.com/api/setting/change-password",
+          "https://ems-backend-snhp.onrender.com/api/setting/change-password",
           setting,
           {
             headers: {

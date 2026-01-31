@@ -16,7 +16,7 @@ const View = () => {
       const fetchEmployee = async () => {
 
          try {
-            const response = await axios.get(`https://ems-backend-hkt0.onrender.com/api/employee/${id}`,
+            const response = await axios.get(`https://ems-backend-snhp.onrender.com/api/employee/${id}`,
                {
                   headers: {
                      "Authorization": `Bearer ${localStorage.getItem('token')}`
@@ -43,7 +43,7 @@ const View = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
 
                <div>
-                  <img src={`https://ems-backend-hkt0.onrender.com/${employee.userId.profileImage}`} className='rounded-sm border w-80' />
+                  <img src={`https://ems-backend-snhp.onrender.com/${employee.userId.profileImage}`} className='rounded-sm border w-80' />
                </div>
                <div>
                   <div className='flex space-x-3 mb-5'>

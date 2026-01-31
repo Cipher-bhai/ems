@@ -23,7 +23,7 @@ const authContext = ({ children }) => {
          try {
             const token = localStorage.getItem('token')
             if (token) {
-               const response = await axios.get('https://ems-backend-hkt0.onrender.com/api/auth/verify', {
+               const response = await axios.get('https://ems-backend-snhp.onrender.com/api/auth/verify', {
                   headers: {
                      "Authorization": `Bearer ${token}`
                   }

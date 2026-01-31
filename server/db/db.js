@@ -7,7 +7,7 @@
 import  Mongoose  from "mongoose";
 
 //  const URLdb = "mongodb://localhost:27017/ems"
- const URLdb = "mongodb+srv://zoom169speedster:Yash123%40@zoom-cluster.wtvvdih.mongodb.net/ems?appName=zoom-cluster"
+ const URLdb = "mongodb+srv://Satya:Satyendra12%40@cluster0.qbbwsgb.mongodb.net/ems?appName=Cluster0"
  Mongoose.connect(URLdb,{
    useNewUrlParser: true,
    useUnifiedTopology: true

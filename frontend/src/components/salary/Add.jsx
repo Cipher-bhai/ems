@@ -53,7 +53,7 @@ const Add = () => {
 
 
       try {
-         const response = await axios.post(`https://ems-backend-hkt0.onrender.com/api/salary/add`, salary, {
+         const response = await axios.post(`https://ems-backend-snhp.onrender.com/api/salary/add`, salary, {
             headers: {
                "Authorization": `Bearer ${localStorage.getItem('token')}`
             }

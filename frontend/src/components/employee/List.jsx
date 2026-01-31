@@ -20,7 +20,7 @@ const List = () => {
     const fetchEmployees = async () => {
       setEmpLoading(true);
       try {
-        const response = await axios.get('https://ems-backend-hkt0.onrender.com/api/employee', {
+        const response = await axios.get('https://ems-backend-snhp.onrender.com/api/employee', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
@@ -36,7 +36,7 @@ const List = () => {
             dep_name: emp.department?.dep_name || 'N/A', 
             name: emp.userId?.name || 'N/A', 
             dob: new Date(emp.dob).toDateString(),
-            profileImage: <img width={70} className='rounded' src={` https://ems-backend-hkt0.onrender.com/${emp.userId?.profileImage || ''}`} />,
+            profileImage: <img width={70} className='rounded' src={` https://ems-backend-snhp.onrender.com/${emp.userId?.profileImage || ''}`} />,
             action: <EmployeeButtons _id={emp._id} />,
           }));
 
